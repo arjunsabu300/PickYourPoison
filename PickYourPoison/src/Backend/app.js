@@ -45,7 +45,7 @@ app.post('/api/questions',async(req,res)=>{
 
         const aiResponse = response.data.choices[0].message.content;
     const questions = aiResponse.split(/\n+/).filter(line => line.trim());
-        console.log(questions);
+        // console.log(questions);
         if (questions.length === 0) {
             return res.status(400).json({error: 'No questions generated. Please try again.'});
         }
