@@ -11,7 +11,7 @@ const Gameui=()=>{
     const fetchQuestions = async()=>{
         setLoading(true);
         try {
-            const response = await axios.post('http://localhost:5000/api/questions', {
+            const response = await axios.post('https://pickyourpoison.onrender.com/api/questions', {
                 gameType,category
             });
 

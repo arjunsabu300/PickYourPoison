@@ -67,7 +67,7 @@ app.get('/healthcheck', (req, res) => {
 
 
 setInterval(() => {
-  axios.get('https://notedown-project.onrender.com/healthcheck')
+  axios.get('https://pickyourpoison.onrender.com/healthcheck')
     .then(response => {
       console.log('Ping successful:', response.data);
     })
